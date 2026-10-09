@@ -29,14 +29,27 @@ export const LeadForm = () => {
     setLoading(true);
     try {
       let sent = false;
-      if (HAS_BACKEND) {
+      // 1) Netlify Function -> Gmail + WhatsApp
+      try {
+        const r = await fetch("/.netlify/functions/lead", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ ...form, "bot-field": "" }),
+        });
+        sent = r.ok;
+      } catch (err) {
+        // function not reachable -> fall through to backups
+      }
+      // 2) Optional custom backend
+      if (!sent && HAS_BACKEND) {
         try {
           await axios.post(`${API}/leads`, form, { timeout: 15000 });
           sent = true;
         } catch (err) {
-          // backend unreachable -> fall back to Netlify Forms below
+          // fall through
         }
       }
+      // 3) Netlify Forms backup (shows in the Netlify dashboard)
       if (!sent) {
         const res = await fetch("/", {
           method: "POST",
