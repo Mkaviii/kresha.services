@@ -1,26 +1,26 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 import { PenLine } from "lucide-react";
 import { Seo } from "../components/Seo";
 import PageHero from "../components/PageHero";
 import Reveal from "../components/Reveal";
 
 import { API, HAS_BACKEND } from "../lib/api";
+import { POSTS } from "../data/posts";
 
 export default function BlogPage() {
-  const [posts, setPosts] = useState([]);
-  const [loaded, setLoaded] = useState(false);
+  const [posts, setPosts] = useState(POSTS);
 
   useEffect(() => {
-    if (!HAS_BACKEND) {
-      setLoaded(true);
-      return;
-    }
+    if (!HAS_BACKEND) return;
     axios
       .get(`${API}/posts`)
-      .then((r) => setPosts(r.data?.posts || []))
-      .catch(() => {})
-      .finally(() => setLoaded(true));
+      .then((r) => {
+        const extra = (r.data?.posts || []).filter((x) => !POSTS.some((q) => q.slug === x.slug));
+        setPosts([...POSTS, ...extra]);
+      })
+      .catch(() => {});
   }, []);
 
   return (
@@ -42,10 +42,28 @@ export default function BlogPage() {
           {posts.length > 0 ? (
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3" data-testid="blog-posts-grid">
               {posts.map((p) => (
-                <a key={p.id} href={`/blog/${p.slug}`} data-testid={`blog-post-${p.slug}`} className="card group p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_44px_rgba(6,74,145,0.14)]">
-                  <h2 className="text-lg">{p.title}</h2>
-                  <p className="mt-2 text-[14px] leading-relaxed text-[#4B5563]">{p.excerpt}</p>
-                </a>
+                <Link
+                  key={p.slug}
+                  to={`/blog/${p.slug}`}
+                  data-testid={`blog-post-${p.slug}`}
+                  className="card group overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_44px_rgba(6,74,145,0.14)]"
+                >
+                  {p.image && (
+                    <img
+                      src={p.image}
+                      alt={p.title}
+                      loading="lazy"
+                      width="1200"
+                      height="630"
+                      className="aspect-[1200/630] w-full object-cover"
+                    />
+                  )}
+                  <div className="p-7">
+                    <h2 className="text-lg">{p.title}</h2>
+                    {p.ta && <p className="mt-1 text-[13.5px] font-semibold text-[#159BD7]">{p.ta.title}</p>}
+                    <p className="mt-2 text-[14px] leading-relaxed text-[#4B5563]">{p.excerpt}</p>
+                  </div>
+                </Link>
               ))}
             </div>
           ) : (

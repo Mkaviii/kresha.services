@@ -32,6 +32,7 @@ export const NAV = [
   { label: "Services", to: "/#services" },
   { label: "Industries", to: "/#industries" },
   { label: "Free Tools", to: "/campaign-calculator" },
+  { label: "Blog", to: "/blog" },
   { label: "FAQ", to: "/faq" },
   { label: "Contact", to: "/contact" },
 ];

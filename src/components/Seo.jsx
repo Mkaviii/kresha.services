@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { SITE } from "../data/content";
 
-const OG_IMAGE = `${SITE.domain}/og-image.jpg`;
+const OG_IMAGE = `${SITE.domain}/hero.png`;
 
 export const Seo = ({ title, description, path = "/", jsonLd }) => {
   const url = `${SITE.domain}${path}`;

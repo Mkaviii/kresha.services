@@ -5,6 +5,11 @@ import { Menu, Phone, X, Calculator } from "lucide-react";
 import Logo from "./Logo";
 import { NAV, SITE } from "../data/content";
 
+// Make sure "Blog" is always in the menu (placed before FAQ), even if NAV in content.js has no Blog item.
+const MENU = NAV.some((i) => i.to === "/blog")
+  ? NAV
+  : NAV.flatMap((i) => (i.to === "/faq" ? [{ label: "Blog", to: "/blog" }, i] : [i]));
+
 export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
@@ -29,7 +34,7 @@ export const Navbar = () => {
   }, [open]);
 
   const isActive = (item) =>
-    item.to.includes("#") ? false : pathname === item.to;
+    item.to.includes("#") ? false : item.to === "/blog" ? pathname.startsWith("/blog") : pathname === item.to;
 
   return (
     <header
@@ -44,7 +49,7 @@ export const Navbar = () => {
         </Link>
 
         <nav className="hidden lg:flex items-center gap-5 whitespace-nowrap" aria-label="Primary">
-          {NAV.map((item) => (
+          {MENU.map((item) => (
             <NavLink
               key={item.label}
               to={item.to}
@@ -137,7 +142,7 @@ export const Navbar = () => {
             className="fixed inset-x-0 top-[72px] bottom-0 z-40 overflow-y-auto bg-white lg:hidden"
           >
             <nav className="wrap flex flex-col gap-1 py-6" aria-label="Mobile">
-              {NAV.map((item) => (
+              {MENU.map((item) => (
                 <NavLink
                   key={item.label}
                   to={item.to}

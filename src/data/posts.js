@@ -1,0 +1,90 @@
+// Blog posts. To add a post, copy one object, change the fields, and put it at the TOP of the list.
+// Body blocks: { h: "heading" } | { p: "paragraph" } | { ul: ["item", ...] }
+import { POSTS_TA } from "./posts_ta";
+
+const BASE = [
+  {
+    slug: "google-maps-top-3-chennai-erode",
+    image: "/blog/blog-google-maps.jpg",
+    title: "How to Get Your Shop on Google Maps' Top 3 in Chennai & Erode",
+    excerpt: "When someone searches \"saree shop near me\", Google shows 3 businesses on the map. Here is how to be one of them.",
+    date: "2026-10-12",
+    service: "seo",
+    body: [
+      { p: "Most customers never scroll past the three businesses Google shows on the map. If you run a shop, clinic or restaurant in Chennai or Erode, those three spots are the best free advertising you can get. The good news: you do not need a big budget to compete for them." },
+      { h: "1. Claim and complete your Google Business Profile" },
+      { p: "Search your business name on Google. If you see \"Claim this business\", claim it and verify. Then fill in everything, because incomplete profiles rank lower." },
+      { ul: ["Exact business name (no keywords added to it)", "Correct address and a pin placed on the real location", "Phone number that you answer, ideally with WhatsApp", "Opening hours, including festival-day changes", "Main category plus 2 to 3 secondary categories"] },
+      { h: "2. Add real photos every month" },
+      { p: "Upload photos of your shop front, inside, products and team. Real photos taken on your phone work better than stock images. Customers choose businesses that look active." },
+      { h: "3. Ask for reviews the easy way" },
+      { p: "Reviews are one of the strongest local ranking signals. Do not wait for customers to remember. After a purchase or visit, send your Google review link on WhatsApp with a friendly message in Tamil or English. Reply to every review, good or bad, politely." },
+      { h: "4. Keep your name, address and phone the same everywhere" },
+      { p: "Your details should match on your website, Instagram, Facebook and local directories. Small differences like \"St.\" versus \"Street\" confuse Google about whether they are the same business." },
+      { h: "5. List your services and products" },
+      { p: "Add each service or product category in your profile, with a short description in the words customers actually use. Post an update or offer at least twice a month, especially around Pongal, Deepavali and wedding season." },
+      { h: "6. Make your website support your Maps listing" },
+      { p: "A simple, fast website with your address, services and an embedded map helps Google trust your business. Mention your area names, such as the neighbourhoods you serve." },
+      { h: "How long does it take?" },
+      { p: "Small improvements can show within weeks, but ranking in the top 3 in a competitive area usually takes a few months of steady work. Anyone promising instant #1 ranking is not being honest." },
+    ],
+  },
+  {
+    slug: "what-is-aeo-ai-search-small-business",
+    image: "/blog/blog-aeo-ai-search.jpg",
+    title: "What Is AEO? How to Get Recommended by ChatGPT and Google AI",
+    excerpt: "Customers now ask AI assistants \"which is the best clinic in Erode?\" Here is how to make sure your business is the answer.",
+    date: "2026-10-12",
+    service: "aeo-geo",
+    body: [
+      { p: "More people are asking AI assistants and Google's AI answers for recommendations instead of scrolling through a list of links. AEO (Answer Engine Optimisation) and GEO (Generative Engine Optimisation) are about making your business easy for these systems to find, understand and suggest." },
+      { h: "How AI assistants decide who to recommend" },
+      { p: "Nobody outside these companies knows the exact rules, but the pattern is consistent: AI tools lean on clear, trustworthy, well-structured information that appears in several places." },
+      { h: "What you can do today" },
+      { ul: [
+        "Write clear pages that state what you do, where, and for whom, in plain sentences",
+        "Add an FAQ section answering the real questions customers ask you",
+        "Keep your Google Business Profile complete and your reviews growing",
+        "Add structured data (schema) to your website so machines can read your services, prices and areas",
+        "Keep your details identical on your website, social profiles and directories",
+        "Get mentioned on trusted local sites, news pages and directories",
+      ] },
+      { h: "Why FAQs matter so much" },
+      { p: "AI answers are built from questions and answers. If your website already answers \"How much does a saree restoration cost?\" or \"Do you accept walk-ins?\" in a clear paragraph, you are far easier to quote." },
+      { h: "Is AEO replacing SEO?" },
+      { p: "No. Good SEO is the foundation, since AI tools draw on the same web content. AEO is the extra layer that makes that content easy to understand and quote. Start with SEO basics, then add AEO." },
+      { h: "5 signs your business is invisible to AI" },
+      { ul: ["Your website has little text beyond a photo gallery", "You have no FAQ page", "Your Google profile is incomplete or has few reviews", "Your phone number or address differs across the web", "No other website mentions your business"] },
+      { p: "Not sure where you stand? Kresha Services offers a free website and SEO audit that checks these points." },
+    ],
+  },
+  {
+    slug: "tamil-festival-marketing-calendar",
+    image: "/blog/blog-festival-calendar.jpg",
+    title: "Tamil Festival Marketing Calendar: Plan Your Year of Offers",
+    excerpt: "Pongal, Tamil New Year, Aadi, Deepavali and wedding season: when to start promoting and what to post.",
+    date: "2026-10-12",
+    service: "social-media-marketing",
+    body: [
+      { p: "In Tamil Nadu, festivals drive buying. Businesses that plan their promotions early get the customers; those who start a week before get what is left. Use this calendar as a starting point and adjust dates each year." },
+      { h: "Pongal (January)" },
+      { p: "Start teasers 3 to 4 weeks ahead. Good fits: textiles, home goods, groceries, gifting. Post greetings on the day, but run your offers before it." },
+      { h: "Tamil New Year (April)" },
+      { p: "A fresh-start theme works well for gold and jewellery, new-store launches, clinics (health check packages) and education admissions." },
+      { h: "Aadi (July to August)" },
+      { p: "Aadi sales are a tradition for textiles and retail. Announce the offer a week before, and use daily stories to keep it alive." },
+      { h: "Wedding season" },
+      { p: "Promote early to families planning ahead: sarees, jewellery, photography, catering, venues, hotels. Show real customer photos with permission." },
+      { h: "Navaratri and Deepavali (October to November)" },
+      { p: "The biggest shopping period. Start 4 to 6 weeks ahead with a countdown. Use WhatsApp broadcasts to existing customers and Google Ads for people searching to buy." },
+      { h: "A simple monthly rhythm" },
+      { ul: ["Week 1: teaser or story about the upcoming festival", "Week 2: product or service highlights", "Week 3: the offer, with a clear WhatsApp or call button", "Week 4: customer photos, reviews and thank-yous"] },
+      { h: "Tips" },
+      { ul: ["Design creatives in Tamil and English", "Always include one clear action: call, WhatsApp or visit", "Track which post brought which enquiry so next year is better"] },
+    ],
+  },
+];
+
+export const POSTS = BASE.map((p) => ({ ...p, ta: POSTS_TA[p.slug] }));
+
+export const getPost = (slug) => POSTS.find((p) => p.slug === slug);
