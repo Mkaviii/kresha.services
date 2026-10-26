@@ -40,7 +40,7 @@ export const Hero = () => {
       <div className="wrap relative z-10 grid items-center gap-12 pb-14 pt-10 md:pb-20 md:pt-16 lg:grid-cols-[0.95fr_1.05fr]">
         <div className="relative">
           <motion.p {...fade(0)} className="eyebrow" data-testid="hero-eyebrow">
-            <MapPin size={13} /> Digital Marketing Agency · Chennai &amp; Erode
+            <MapPin size={13} /> Digital Marketing Agency · Chennai
           </motion.p>
 
           <h1 className="text-[40px] font-extrabold leading-[1.04] sm:text-6xl lg:text-[64px]" data-testid="hero-heading">
@@ -89,7 +89,7 @@ export const Hero = () => {
               <Star size={15} className="fill-[#FFBD19] text-[#FFBD19]" /> Google Reviewed
             </span>
             <span className="hidden h-1 w-1 rounded-full bg-[#D8E0EC] sm:inline-block" aria-hidden="true" />
-            <span>Based in Chennai &amp; Erode</span>
+            <span>Main Branch: Chennai &middot; Regional Hub: Erode</span>
             <span className="hidden h-1 w-1 rounded-full bg-[#D8E0EC] sm:inline-block" aria-hidden="true" />
             <span className="inline-flex items-center gap-1.5">
               <Languages size={15} className="text-[#159BD7]" /> Tamil + English Support
