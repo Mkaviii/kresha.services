@@ -21,6 +21,7 @@ const BlogPostPage = lazy(() => import("./pages/BlogPostPage"));
 const ServicePage = lazy(() => import("./pages/ServicePage"));
 const IndustryPage = lazy(() => import("./pages/IndustryPage"));
 const CityPage = lazy(() => import("./pages/CityPage"));
+const ServiceLocationPage = lazy(() => import("./pages/ServiceLocationPage"));
 const CalculatorPage = lazy(() => import("./pages/CalculatorPage"));
 
 const PageFallback = () => (
@@ -100,6 +101,7 @@ function App() {
                 <Route path="/campaign-calculator" element={<CalculatorPage />} />
                 <Route path="/services/:slug" element={<ServicePage />} />
                 <Route path="/industries/:slug" element={<IndustryPage />} />
+                <Route path="/service-location" element={<ServiceLocationPage />} />
                 <Route path="/digital-marketing-agency-chennai" element={<CityPage city="chennai" />} />
                 <Route path="/digital-marketing-agency-erode" element={<CityPage city="erode" />} />
                 <Route path="*" element={<NotFound />} />
