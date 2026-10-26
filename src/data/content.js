@@ -30,7 +30,7 @@ export const NAV = [
   { label: "Home", to: "/" },
   { label: "About", to: "/about" },
   { label: "Services", to: "/#services" },
-  { label: "Industries", to: "/#industries" },
+  { label: "Service Location", to: "/service-location" },
   { label: "Free Tools", to: "/campaign-calculator" },
   { label: "Blog", to: "/blog" },
   { label: "FAQ", to: "/faq" },
@@ -438,7 +438,7 @@ export const CITIES = {
       "We help you understand how your online marketing is progressing",
     ],
     faqs: [
-      { q: "Do you have an office in Erode?", a: "Erode is one of our two bases, along with Chennai. We can meet you at your shop or office, or talk online." },
+      { q: "Do you have an office in Erode?", a: "Erode is our regional hub, and Chennai is our main branch. We can meet you at your shop or office, or talk online." },
       { q: "Is digital marketing too costly for a small shop?", a: "No. You can start small. We make a plan for your budget and tell you the price first." },
       { q: "Can you help my saree shop get more customers?", a: "Yes. We set up Google Maps, a WhatsApp catalogue and festival posts, so more people can find your shop and message you." },
       { q: "Do you help businesses near Erode?", a: "Yes. We help businesses in Erode and nearby towns, and across Tamil Nadu." },
