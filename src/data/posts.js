@@ -5,6 +5,7 @@ import { POSTS_TA } from "./posts_ta";
 const BASE = [
   {
     slug: "social-media-marketing-plan-small-business",
+    image: "/blog/blog-social-media.jpg",
     title: "Social Media Marketing for Small Businesses: A Simple Plan for Chennai and Erode",
     excerpt: "You do not need to post every day or be on every app. Here is a simple plan that a busy shop owner can actually follow.",
     date: "2026-10-26",
@@ -33,6 +34,7 @@ const BASE = [
   },
   {
     slug: "google-ads-local-business-how-to-start",
+    image: "/blog/blog-google-ads.jpg",
     title: "Google Ads for Local Businesses: How to Start Without Wasting Money",
     excerpt: "Google Ads can bring calls and WhatsApp enquiries quickly, but only if you set them up carefully. Here is how to begin the right way.",
     date: "2026-10-26",
@@ -60,6 +62,7 @@ const BASE = [
   },
   {
     slug: "website-for-local-business-what-you-need",
+    image: "/blog/blog-website.jpg",
     title: "What Your Business Website Really Needs (Simple Checklist)",
     excerpt: "A good website does not have to be big or expensive. Here are the things that matter most for a local business.",
     date: "2026-10-26",
@@ -89,6 +92,7 @@ const BASE = [
   },
   {
     slug: "graphic-design-tips-business-posts",
+    image: "/blog/blog-graphic-design.jpg",
     title: "Graphic Design Tips for Business Posts, Posters and Offers",
     excerpt: "You do not need to be a designer to make clean, professional creatives. These simple rules will improve every post you share.",
     date: "2026-10-26",
