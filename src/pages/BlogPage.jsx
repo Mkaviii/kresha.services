@@ -54,8 +54,8 @@ export default function BlogPage() {
                       alt={p.title}
                       loading="lazy"
                       width="1200"
-                      height="630"
-                      className="aspect-[1200/630] w-full object-cover"
+                      height="800"
+                      className="aspect-[3/2] w-full object-cover"
                     />
                   )}
                   <div className="p-7">
