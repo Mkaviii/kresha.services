@@ -22,6 +22,7 @@ export const PageHero = ({ eyebrow, title, sub, image, imageClass = "", children
             <img
               src={image}
               alt={title}
+              title={title}
               loading="eager"
               className={`relative ${imageClass} h-auto w-full rounded-2xl border border-[#E5EAF2] object-cover shadow-[0_4px_20px_rgba(6,74,145,0.08)]`}
             />

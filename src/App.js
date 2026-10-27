@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import WhatsAppFab from "./components/WhatsAppFab";
 import ChatWidget from "./components/ChatWidget";
 import ErrorBoundary from "./components/ErrorBoundary";
+import { Seo } from "./components/Seo";
 
 import Home from "./pages/Home";
 const AboutPage = lazy(() => import("./pages/AboutPage"));
@@ -73,6 +74,7 @@ const ScrollManager = () => {
 
 const NotFound = () => (
   <section className="wrap flex min-h-[60vh] flex-col items-center justify-center gap-5 py-20 text-center">
+    <Seo title="Page not found | Kresha Services" noindex />
     <p className="text-6xl font-extrabold text-[#064A91]">404</p>
     <p className="text-lg font-semibold text-[#4B5563]">This page took a wrong turn on the information super-highway.</p>
     <Link to="/" data-testid="not-found-home-link" className="btn btn-primary">Back to Home</Link>

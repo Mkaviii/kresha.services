@@ -43,6 +43,9 @@ export default function ServiceLocationPage() {
                   <img
                     src={c.image}
                     alt={`Digital marketing agency in ${c.name}`}
+                    title={`Digital marketing agency in ${c.name}`}
+                    width="900"
+                    height="450"
                     loading="lazy"
                     className="h-48 w-full object-cover"
                   />

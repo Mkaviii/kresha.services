@@ -80,7 +80,7 @@ export const CreativeGenerator = () => {
 
       {result && (
         <div className="mt-7" data-testid="creative-result">
-          <img src={result.image} alt="Generated ad creative" data-testid="creative-result-image" className="mx-auto max-h-[460px] rounded-2xl border border-[#E5EAF2] shadow-[0_4px_20px_rgba(6,74,145,0.08)]" />
+          <img src={result.image} alt="Generated ad creative" title="Generated ad creative" data-testid="creative-result-image" className="mx-auto max-h-[460px] rounded-2xl border border-[#E5EAF2] shadow-[0_4px_20px_rgba(6,74,145,0.08)]" />
           <div className="mt-4 flex justify-center">
             <a href={result.image} download={`kresha-creative.png`} data-testid="creative-download-button" className="btn btn-outline min-h-[44px]">
               <Download size={16} /> Download Poster

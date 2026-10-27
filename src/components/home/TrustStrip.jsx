@@ -1,8 +1,8 @@
-import { Star, MapPin, Languages, BadgeCheck } from "lucide-react";
+import { IndianRupee, MapPin, Languages, BadgeCheck } from "lucide-react";
 import Reveal from "../Reveal";
 
 const ITEMS = [
-  { icon: Star, title: "Google Reviewed", desc: "Real ratings from businesses like yours" },
+  { icon: IndianRupee, title: "Transparent pricing", desc: "Itemised quotes and GST invoices" },
   { icon: MapPin, title: "Chennai + Erode", desc: "Local team, local market knowledge" },
   { icon: Languages, title: "Tamil + English", desc: "Work and reports in your language" },
   { icon: BadgeCheck, title: "Service-area business", desc: "We come to your shop, office or site" },

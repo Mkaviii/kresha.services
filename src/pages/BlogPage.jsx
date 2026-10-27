@@ -52,6 +52,7 @@ export default function BlogPage() {
                     <img
                       src={p.image}
                       alt={p.title}
+                      title={p.title}
                       loading="lazy"
                       width="1200"
                       height="800"
@@ -78,7 +79,7 @@ export default function BlogPage() {
                   first posts land here soon — meanwhile, get a free strategy call and start growing
                   today.
                 </p>
-                <a href="/contact" data-testid="blog-empty-cta" className="btn btn-primary mt-2">Get Free Strategy Call</a>
+                <Link to="/contact" data-testid="blog-empty-cta" className="btn btn-primary mt-2">Get Free Strategy Call</Link>
               </div>
             </Reveal>
           )}

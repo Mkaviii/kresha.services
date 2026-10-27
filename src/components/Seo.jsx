@@ -3,8 +3,16 @@ import { SITE } from "../data/content";
 
 const OG_IMAGE = `${SITE.domain}/og-image.jpg`;
 
-export const Seo = ({ title, description, path = "/", jsonLd }) => {
+export const Seo = ({ title, description, path = "/", jsonLd, noindex = false }) => {
   const url = `${SITE.domain}${path}`;
+  if (noindex) {
+    return (
+      <Helmet>
+        <title>{title}</title>
+        <meta name="robots" content="noindex, follow" />
+      </Helmet>
+    );
+  }
   return (
     <Helmet>
       <title>{title}</title>

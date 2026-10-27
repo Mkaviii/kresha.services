@@ -34,6 +34,9 @@ export default function AboutPage() {
             <img
               src={IMG.founder}
               alt="Kavitha M, founder of Kresha Services"
+              title="Kavitha M, founder of Kresha Services"
+              width="760"
+              height="1013"
               loading="lazy"
               className="relative aspect-[3/4] w-full rounded-[28px] border border-[#E5EAF2] object-cover shadow-[0_20px_60px_rgba(6,74,145,0.16)]"
               data-testid="about-page-founder-photo"

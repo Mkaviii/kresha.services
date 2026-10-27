@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { motion, useMotionValue, useSpring } from "framer-motion";
-import { Phone, Star, MapPin, Languages } from "lucide-react";
+import { Phone, BadgeCheck, MapPin, Languages } from "lucide-react";
 import { SITE, IMG } from "../../data/content";
 import { WhatsAppIcon } from "../Footer";
 import { HeroWaves } from "../WaveBackdrop";
@@ -86,7 +86,7 @@ export const Hero = () => {
 
           <motion.div {...fade(1.1)} className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-2 text-[13px] font-semibold text-[#4B5563]" data-testid="hero-trust-strip">
             <span className="inline-flex items-center gap-1.5">
-              <Star size={15} className="fill-[#FFBD19] text-[#FFBD19]" /> Google Reviewed
+              <BadgeCheck size={15} className="text-[#159BD7]" /> Free website &amp; SEO audit
             </span>
             <span className="hidden h-1 w-1 rounded-full bg-[#D8E0EC] sm:inline-block" aria-hidden="true" />
             <span>Main Branch: Chennai &middot; Regional Hub: Erode</span>
@@ -118,6 +118,9 @@ export const Hero = () => {
             <img
               src={IMG.hero}
               alt="Digital marketing results — more traffic, more sales"
+              title="Digital marketing results for Tamil Nadu businesses"
+              width="1100"
+              height="733"
               fetchPriority="high"
               className="relative aspect-[3/2] w-full rounded-[28px] border border-[#E5EAF2] object-cover shadow-[0_20px_60px_rgba(6,74,145,0.18)]"
               data-testid="hero-image"

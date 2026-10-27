@@ -13,6 +13,7 @@ export default function IndustryPage() {
   if (!page) {
     return (
       <section className="wrap flex min-h-[50vh] flex-col items-center justify-center gap-5 py-20 text-center">
+        <Seo title="Page not found | Kresha Services" noindex />
         <p className="text-lg font-bold text-[#064A91]">Industry page coming soon.</p>
         <Link to="/" data-testid="industry-not-found-home" className="btn btn-primary">Back to Home</Link>
       </section>

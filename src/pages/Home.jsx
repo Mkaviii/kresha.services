@@ -9,7 +9,6 @@ import Industries from "../components/home/Industries";
 import ProcessBand from "../components/home/ProcessBand";
 import PricingSection from "../components/home/PricingSection";
 import AboutShort from "../components/home/AboutShort";
-import Reviews from "../components/home/Reviews";
 import FaqSection from "../components/home/FaqSection";
 import CtaBand from "../components/CtaBand";
 import ContactSection from "../components/home/ContactSection";
@@ -32,7 +31,6 @@ export default function Home() {
       <ProcessBand />
       <PricingSection />
       <AboutShort />
-      <Reviews />
       <FaqSection />
       <CtaBand />
       <ContactSection />

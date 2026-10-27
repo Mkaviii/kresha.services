@@ -14,6 +14,7 @@ export default function BlogPostPage() {
   if (!post) {
     return (
       <section className="section">
+        <Seo title="Post not found | Kresha Services" noindex />
         <div className="wrap text-center">
           <h1 className="text-3xl font-bold">Post not found</h1>
           <Link to="/blog" className="btn btn-primary mt-6">Back to blog</Link>
@@ -37,7 +38,7 @@ export default function BlogPostPage() {
       </PageHero>
       <article className="section">
         <div className="wrap max-w-3xl space-y-5 text-[16px] leading-relaxed text-[#374151]">
-          {post.image && <img src={post.image} alt={post.title} width="1200" height="800" className="w-full rounded-2xl" />}
+          {post.image && <img src={post.image} alt={post.title} title={post.title} width="1200" height="800" className="w-full rounded-2xl" />}
           {post.body.map((b, i) =>
             b.h ? <h2 key={i} className="pt-4 text-2xl font-bold">{b.h}</h2>
             : b.ul ? <ul key={i} className="list-disc space-y-2 pl-6">{b.ul.map((li) => <li key={li}>{li}</li>)}</ul>

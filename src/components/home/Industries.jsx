@@ -46,7 +46,7 @@ export const Industries = () => (
           const card = (
             <>
               <div className="h-[104px] w-full overflow-hidden">
-                <img src={img} alt={ind.name} loading="lazy" className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+                <img src={img} alt={ind.name} title={ind.name} width="900" height="450" loading="lazy" className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
               </div>
               <div className="p-3">
                 <p className="text-[13.5px] font-bold leading-tight text-[#064A91]">{ind.name}</p>
