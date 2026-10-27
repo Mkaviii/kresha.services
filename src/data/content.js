@@ -12,7 +12,7 @@ export const SITE = {
   facebook: "https://facebook.com/kreshaservices",
   linkedin: "https://linkedin.com/company/kreshaservices",
   wa: "https://wa.me/919363100998?text=Hi%20Kresha%20Services!%20I%20want%20to%20grow%20my%20business%20online.",
-  domain: "https://kreshaservices.com",
+  domain: "https://kresha.online",
 };
 
 export const IMG = {
@@ -530,7 +530,7 @@ export const localBusinessSchema = {
   name: "Kresha Services",
   slogan: "Grow Your Business, Digitally.",
   description: "Digital marketing agency for Chennai & Erode — SEO, AEO/GEO, social media marketing, Google Ads, website development and graphic design.",
-  url: "https://kreshaservices.com",
+  url: "https://kresha.online",
   telephone: "+919363100998",
   email: "kreshaservices@gmail.com",
   sameAs: [
@@ -562,6 +562,6 @@ export const serviceSchema = (s) => ({
   "@type": "Service",
   name: s.title,
   description: s.meta,
-  provider: { "@type": "ProfessionalService", name: "Kresha Services", url: "https://kreshaservices.com", telephone: "+919363100998" },
+  provider: { "@type": "ProfessionalService", name: "Kresha Services", url: "https://kresha.online", telephone: "+919363100998" },
   areaServed: ["Chennai", "Erode", "Tamil Nadu"],
 });
