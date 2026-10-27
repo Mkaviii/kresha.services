@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kreshaservices.com/sitemap.xml
+Sitemap: https://kresha.online/sitemap.xml
