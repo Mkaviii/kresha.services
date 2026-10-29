@@ -66,6 +66,7 @@ export const SERVICES = [
       { title: "Google Maps visibility", desc: "Show up in the local pack when someone searches near your shop or clinic." },
       { title: "Compounding growth", desc: "Rankings you build keep working for you long after the work is done." },
     ],
+    seoTitle: "SEO Services in Chennai & Erode | Kresha Services",
     meta: "SEO services in Chennai & Erode — local SEO, Google Business Profile optimisation and rankings that bring steady enquiries. Tamil + English.",
   },
   {
@@ -89,7 +90,7 @@ export const SERVICES = [
       { title: "Future-proof visibility", desc: "Win the next wave of search, not just today's." },
       { title: "Structured for machines", desc: "Your services, prices and areas become machine-readable." },
     ],
-    meta: "AEO & GEO services — get your Chennai or Erode business recommended by ChatGPT, Gemini and AI search engines.",
+    meta: "AEO & GEO services — get your Chennai or Erode business recommended by ChatGPT, Gemini and AI search engines. Structured data and AI-ready content.",
   },
   {
     slug: "social-media-marketing",
@@ -135,7 +136,7 @@ export const SERVICES = [
       { title: "No wasted spend", desc: "Tight targeting and weekly optimisation of every rupee." },
       { title: "Trackable ROI", desc: "Know exactly which ad brought which lead." },
     ],
-    meta: "Google Ads management in Chennai & Erode — targeted campaigns with full spend transparency and trackable leads.",
+    meta: "Google Ads management in Chennai & Erode — targeted campaigns with full spend transparency, call and WhatsApp tracking, and trackable leads.",
   },
   {
     slug: "website-development",
@@ -158,7 +159,7 @@ export const SERVICES = [
       { title: "Loads in a blink", desc: "Fast, lightweight pages your customers on mobile data can open." },
       { title: "Yours, fully", desc: "We set up the domain, hosting and analytics in your name." },
     ],
-    meta: "Website development for Chennai & Erode businesses — fast, mobile-first, SEO-ready websites with WhatsApp integration.",
+    meta: "Website development for Chennai & Erode businesses — fast, mobile-first, SEO-ready websites with WhatsApp integration and Google Analytics setup.",
   },
   {
     slug: "graphic-design",
@@ -181,7 +182,7 @@ export const SERVICES = [
       { title: "Consistent everywhere", desc: "One identity across WhatsApp, Instagram, print and site." },
       { title: "Fast turnaround", desc: "Creatives delivered in days, in both languages." },
     ],
-    meta: "Graphic design services — logos, festival creatives, catalogues and brand kits for businesses in Tamil Nadu.",
+    meta: "Graphic design services — logos, festival creatives, catalogues and brand kits for businesses in Tamil Nadu. Tamil and English, print and web ready.",
   },
 ];
 
@@ -267,6 +268,7 @@ export const INDUSTRY_PAGES = {
       "Instagram & reels that sell the experience, not just rooms",
       "Seasonal ad campaigns to fill off-season dates",
     ],
+    seoTitle: "Hotel & Restaurant Digital Marketing | Kresha Services",
     meta: "Digital marketing for hotels & restaurants in Tamil Nadu — direct bookings, local SEO and social content that fills rooms.",
   },
   education: {
@@ -393,7 +395,7 @@ export const CITIES = {
     ],
     ctaTitle: "Ready to grow your business in Chennai?",
     ctaSub: "Contact Kresha Services to discuss your goals and find the right digital marketing plan for your business.",
-    meta: "Looking for a digital marketing agency in Chennai? Kresha Services helps businesses grow through SEO, social media marketing, Google Ads and website design.",
+    meta: "Looking for a digital marketing agency in Chennai? Kresha Services helps businesses grow with SEO, social media, Google Ads and websites.",
   },
   erode: {
     name: "Erode",

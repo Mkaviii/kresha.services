@@ -19,7 +19,7 @@ export default function ServiceLocationPage() {
   return (
     <>
       <Seo
-        title="Service Location | Kresha Services"
+        title="Service Locations — Chennai & Erode | Kresha Services"
         description="Kresha Services offers digital marketing in Chennai and Erode, including SEO, Google Ads, social media marketing and website development."
         path="/service-location"
       />

@@ -16,7 +16,7 @@ export default function AboutPage() {
   return (
     <>
       <Seo
-        title="About Kresha Services — Digital Growth Partner in Chennai & Erode"
+        title="About Kresha Services | Digital Marketing, Chennai & Erode"
         description="Kresha Services is a digital marketing agency for Chennai, Erode and India — affordable, effective, transparent. Meet the team behind the growth."
         path="/about"
       />

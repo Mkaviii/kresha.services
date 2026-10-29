@@ -24,7 +24,7 @@ export default function IndustryPage() {
 
   return (
     <>
-      <Seo title={`${page.name} Digital Marketing Agency | Kresha Services`} description={page.meta} path={`/industries/${slug}`} />
+      <Seo title={page.seoTitle || `${page.name} Digital Marketing Agency | Kresha Services`} description={page.meta} path={`/industries/${slug}`} />
 
       <PageHero eyebrow={page.name} title={`Digital marketing for ${page.name.toLowerCase()} businesses`} sub={page.hero} image={page.image} />
 

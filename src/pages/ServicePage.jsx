@@ -24,7 +24,7 @@ export default function ServicePage() {
 
   return (
     <>
-      <Seo title={`${s.title} in Chennai & Erode | Kresha Services`} description={s.meta} path={`/services/${s.slug}`} jsonLd={serviceSchema(s)} />
+      <Seo title={s.seoTitle || `${s.title} in Chennai & Erode | Kresha Services`} description={s.meta} path={`/services/${s.slug}`} jsonLd={serviceSchema(s)} />
 
       <PageHero eyebrow={s.short} title={s.title} sub={s.hero} image={s.image}>
         <Link to="/contact" data-testid="service-hero-cta" className="btn btn-primary">

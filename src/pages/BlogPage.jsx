@@ -26,7 +26,7 @@ export default function BlogPage() {
   return (
     <>
       <Seo
-        title="Blog — Digital Marketing Insights for Indian Businesses | Kresha Services"
+        title="Blog — Digital Marketing Insights | Kresha Services"
         description="Practical digital marketing guides for businesses in Tamil Nadu — SEO, Google Ads, WhatsApp marketing and more. From the Kresha Services team."
         path="/blog"
       />

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import { Menu, Phone, X, Calculator } from "lucide-react";
+import { Menu, Phone, X, Calculator, MapPin, BookOpen } from "lucide-react";
 import Logo from "./Logo";
 import { NAV, SITE } from "../data/content";
 
@@ -114,6 +114,20 @@ export const Navbar = () => {
           <Calculator size={14} /> Free Tools
         </Link>
         <Link
+          to="/service-location"
+          data-testid="mobile-quick-service-location"
+          className="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-[#064A91] px-3.5 py-2 text-[12.5px] font-bold text-[#064A91]"
+        >
+          <MapPin size={14} /> Service Location
+        </Link>
+        <Link
+          to="/blog"
+          data-testid="mobile-quick-blog"
+          className="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-[#064A91] px-3.5 py-2 text-[12.5px] font-bold text-[#064A91]"
+        >
+          <BookOpen size={14} /> Blog
+        </Link>
+        <Link
           to="/contact"
           data-testid="mobile-quick-quote"
           className="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-[#064A91] px-3.5 py-2 text-[12.5px] font-bold text-[#064A91]"
@@ -139,7 +153,7 @@ export const Navbar = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -12 }}
             transition={{ duration: 0.22, ease: "easeOut" }}
-            className="fixed inset-x-0 top-[72px] bottom-0 z-40 overflow-y-auto bg-white lg:hidden"
+            className="absolute inset-x-0 top-full z-40 max-h-[calc(100vh-8rem)] overflow-y-auto bg-white shadow-[0_12px_24px_rgba(6,74,145,0.12)] lg:hidden"
           >
             <nav className="wrap flex flex-col gap-1 py-6" aria-label="Mobile">
               {MENU.map((item) => (

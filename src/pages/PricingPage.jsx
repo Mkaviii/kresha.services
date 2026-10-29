@@ -10,7 +10,7 @@ export default function PricingPage() {
   return (
     <>
       <Seo
-        title="Pricing — Digital Marketing Packages for Tamil Nadu Businesses | Kresha Services"
+        title="Pricing — Digital Marketing Packages | Kresha Services"
         description="Transparent digital marketing packages: Starter, Growth and Pro. SEO, Google Ads, social media, websites and design. GST invoiced, no long lock-ins."
         path="/pricing"
       />

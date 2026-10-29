@@ -18,7 +18,7 @@ export default function Home() {
     <>
       <Seo
         title="Kresha Services — Digital Marketing Agency in Chennai & Erode"
-        description="Kresha Services helps Chennai & Erode businesses grow with SEO, AI search (AEO/GEO), social media, Google Ads, websites and design. Affordable, transparent, Tamil + English support."
+        description="Chennai & Erode digital marketing agency: SEO, AI search (AEO/GEO), social media, Google Ads, websites and design. Tamil + English support."
         path="/"
         jsonLd={localBusinessSchema}
       />

@@ -8,7 +8,7 @@ export default function ContactPage() {
   return (
     <>
       <Seo
-        title="Contact Kresha Services — Digital Marketing Agency Chennai & Erode"
+        title="Contact Kresha Services | Digital Marketing Chennai & Erode"
         description="Call 93631 00998, WhatsApp or send an enquiry. Kresha Services — digital marketing agency serving Chennai, Erode and all of Tamil Nadu."
         path="/contact"
       />

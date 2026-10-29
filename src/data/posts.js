@@ -8,6 +8,8 @@ const BASE = [
     image: "/blog/blog-social-media.jpg",
     title: "Social Media Marketing for Small Businesses: A Simple Plan for Chennai and Erode",
     excerpt: "You do not need to post every day or be on every app. Here is a simple plan that a busy shop owner can actually follow.",
+    seoTitle: "Social Media Plan for Small Businesses | Kresha Services",
+    seoDescription: "A simple social media plan for busy shop owners in Chennai and Erode. No daily posting and no need to be on every app. Start here.",
     date: "2026-10-26",
     service: "social-media-marketing",
     body: [
@@ -37,6 +39,8 @@ const BASE = [
     image: "/blog/blog-google-ads.jpg",
     title: "Google Ads for Local Businesses: How to Start Without Wasting Money",
     excerpt: "Google Ads can bring calls and WhatsApp enquiries quickly, but only if you set them up carefully. Here is how to begin the right way.",
+    seoTitle: "Google Ads for Local Business: How to Start | Kresha Services",
+    seoDescription: "Google Ads can bring calls and WhatsApp enquiries quickly, but only if set up carefully. Here is how local businesses can begin the right way.",
     date: "2026-10-26",
     service: "google-ads",
     body: [
@@ -65,6 +69,8 @@ const BASE = [
     image: "/blog/blog-website.jpg",
     title: "What Your Business Website Really Needs (Simple Checklist)",
     excerpt: "A good website does not have to be big or expensive. Here are the things that matter most for a local business.",
+    seoTitle: "Website Checklist for Local Businesses | Kresha Services",
+    seoDescription: "A good website does not have to be big or expensive. Here is a simple checklist of what matters most for a local business in Tamil Nadu.",
     date: "2026-10-26",
     service: "website-development",
     body: [
@@ -95,6 +101,8 @@ const BASE = [
     image: "/blog/blog-graphic-design.jpg",
     title: "Graphic Design Tips for Business Posts, Posters and Offers",
     excerpt: "You do not need to be a designer to make clean, professional creatives. These simple rules will improve every post you share.",
+    seoTitle: "Graphic Design Tips for Business Posts | Kresha Services",
+    seoDescription: "You do not need to be a designer to make clean, professional creatives. These simple design rules will improve every post, poster and offer you share.",
     date: "2026-10-26",
     service: "graphic-design",
     body: [
@@ -125,6 +133,8 @@ const BASE = [
     image: "/blog/blog-google-maps.jpg",
     title: "How to Get Your Shop on Google Maps' Top 3 in Chennai & Erode",
     excerpt: "When someone searches \"saree shop near me\", Google shows 3 businesses on the map. Here is how to be one of them.",
+    seoTitle: "Get Into Google Maps' Top 3 | Kresha Services",
+    seoDescription: "When someone searches 'saree shop near me', Google shows 3 businesses on the map. Here is how a shop in Chennai or Erode can be one of them.",
     date: "2026-10-12",
     service: "seo",
     body: [
@@ -151,6 +161,8 @@ const BASE = [
     image: "/blog/blog-aeo-ai-search.jpg",
     title: "What Is AEO? How to Get Recommended by ChatGPT and Google AI",
     excerpt: "Customers now ask AI assistants \"which is the best clinic in Erode?\" Here is how to make sure your business is the answer.",
+    seoTitle: "What Is AEO? Get Recommended by AI Search | Kresha Services",
+    seoDescription: "Customers now ask AI assistants which clinic or shop is best near them. Learn what AEO is and how to make your business the answer they give.",
     date: "2026-10-12",
     service: "aeo-geo",
     body: [
@@ -180,6 +192,8 @@ const BASE = [
     image: "/blog/blog-festival-calendar.jpg",
     title: "Tamil Festival Marketing Calendar: Plan Your Year of Offers",
     excerpt: "Pongal, Tamil New Year, Aadi, Deepavali and wedding season: when to start promoting and what to post.",
+    seoTitle: "Tamil Festival Marketing Calendar | Kresha Services",
+    seoDescription: "Pongal, Tamil New Year, Aadi, Deepavali and wedding season: when to start promoting your offers and what to post. A simple festival marketing calendar.",
     date: "2026-10-12",
     service: "social-media-marketing",
     body: [

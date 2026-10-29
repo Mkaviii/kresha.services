@@ -27,7 +27,11 @@ export default function BlogPostPage() {
 
   return (
     <>
-      <Seo title={`${post.title} | Kresha Services`} description={post.excerpt} path={`/blog/${post.slug}`} />
+      <Seo
+        title={lang === "en" && base.seoTitle ? base.seoTitle : `${post.title} | Kresha Services`}
+        description={lang === "en" && base.seoDescription ? base.seoDescription : post.excerpt}
+        path={`/blog/${post.slug}`}
+      />
       <PageHero eyebrow="Blog" title={post.title} sub={post.excerpt}>
         {base.ta && (
           <div className="flex gap-2" role="group" aria-label="Language">

@@ -15,8 +15,8 @@ export default function CalculatorPage() {
   return (
     <>
       <Seo
-        title="Free Campaign Performance Calculator — Check Your Ads & Social ROI | Kresha Services"
-        description="Enter your campaign numbers and instantly get engagement rate, CTR, conversion rate, CPM, CPC, ROAS and a 0–100 performance score. A free tool by Kresha Services, Chennai & Erode."
+        title="Free Campaign Performance Calculator | Kresha Services"
+        description="Enter your campaign numbers and get CTR, CPM, CPC, ROAS, conversion rate and a 0–100 performance score. A free tool by Kresha Services."
         path="/campaign-calculator"
       />
 
