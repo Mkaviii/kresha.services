@@ -33,18 +33,14 @@
     <meta name="twitter:image:alt" content="Kresha Services — Grow Your Business, Digitally." data-rh="true" />
 
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-touch-icon.png" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BLZPL78F08"></script>
     <script>
-      var GA_ID = '%REACT_APP_GA4_ID%';
-      if (GA_ID && GA_ID.indexOf('G-') === 0) {
-        var s = document.createElement('script');
-        s.async = true;
-        s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
-        document.head.appendChild(s);
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', GA_ID);
-      }
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-BLZPL78F08');
     </script>
   </head>
   <body>
