@@ -197,7 +197,7 @@ const BASE = [
     date: "2026-10-12",
     service: "social-media-marketing",
     body: [
-      { p: "In Tamil Nadu, festivals drive buying. Businesses that plan their promotions early get the customers; those who start a week before get what is left. Use this calendar as a starting point and adjust dates each year." },
+      { p: "In Tamil Nadu, festivals drive consumer buying behavior. Businesses that plan their marketing campaigns early capture the market, while those starting just a week before only get what is left. Use this calendar as your ultimate strategic guide and plan your offers ahead of time every year." },
       { h: "Pongal (January)" },
       { p: "Start teasers 3 to 4 weeks ahead. Good fits: textiles, home goods, groceries, gifting. Post greetings on the day, but run your offers before it." },
       { h: "Tamil New Year (April)" },
